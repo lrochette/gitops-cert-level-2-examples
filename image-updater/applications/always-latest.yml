@@ -3,8 +3,8 @@ kind: Application
 metadata:
   name: always-latest01
   namespace: argocd
-  annotations:
-    argocd-image-updater.argoproj.io/image-list: example=ghcr.io/lrochette/gitops-cert-level-2-examples
+  # annotations:
+    argocd-image-updater.argoproj.io/image-list: example=ghcr.io/lrochette/gitops-cert-level-2-examples:~1
     argocd-image-updater.argoproj.io/example.update-strategy: latest
 spec:
   project: default
